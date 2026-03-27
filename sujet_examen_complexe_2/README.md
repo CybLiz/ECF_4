@@ -29,16 +29,6 @@ L'application repose sur plusieurs microservices Spring Boot et une interface ut
    - Développez le service de suggestions de recherche avec Spring Boot.
    - Assurez sa bonne intégration avec les autres services et l'UI.
 
-## Bonus
-3. **Conception et développement de nouveaux microservices :**
-   - Proposez **au moins deux nouveaux microservices** cohérents avec le domaine e-commerce. Exemples de pistes (non exhaustives) :
-     - **Service de notifications** (email, push) lors d'événements métier (commande confirmée, expédition, etc.)
-     - **Service de recommandations** basé sur l'historique utilisateur
-     - **Service de gestion des avis et notes** (reviews)
-     - **Service de gestion des retours et remboursements**
-     - **Service de fidélité / points de récompense**
-   - Justifiez vos choix dans le document d'architecture.
-   - Implémentez ces services avec Spring Boot en respectant les principes de responsabilité unique et d'isolation des données.
 
 ## Obligatoire
 4. **Dockerisation et orchestration :**
@@ -57,6 +47,4 @@ L'application repose sur plusieurs microservices Spring Boot et une interface ut
 - `Dockerfile` pour chaque microservice et pour l'interface utilisateur.
 - manifests Kubernetes pour l'orchestration complète.
 - Code source du microservice de recherche.
-- Code source des nouveaux microservices développés.
 - Documentation de déploiement et guide de test.
-- Tests d'intégration ou e2e (optionnel, valorisé).

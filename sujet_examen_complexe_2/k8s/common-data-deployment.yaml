@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: common-data-deployment
+  namespace: ecommerce-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: common-data
+  template:
+    metadata:
+      labels:
+        app: common-data
+    spec:
+      containers:
+        - name: common-data
+          image: common-data-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9000
+          envFrom:
+            - configMapRef:
+                name: common-data-configmap
+            - secretRef:
+                name: common-data-secret
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

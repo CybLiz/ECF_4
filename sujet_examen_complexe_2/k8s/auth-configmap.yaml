@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-configmap
+  namespace: ecommerce-project
+data:
+  PORT: "7000"
+  ACTIVE_PROFILE: "dev"
+  DB_HOST: "mysql-service"
+  DB_PORT: "3306"
+  DB_SCHEMA: "ecommerce_app_database"
+  DB_USER: "mysqluser"
