@@ -4,6 +4,4 @@ metadata:
   name: client-configmap
   namespace: ecommerce-project
 data:
-  PORT: "3000"
   REACT_APP_ENVIRONMENT: "dev"
-  REACT_CLIENT_URL: "http://localhost:3000"

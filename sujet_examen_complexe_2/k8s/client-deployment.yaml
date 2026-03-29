@@ -18,7 +18,7 @@ spec:
           image: ecommerce-client:latest
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 3000
+            - containerPort: 80
           envFrom:
             - configMapRef:
                 name: client-configmap
