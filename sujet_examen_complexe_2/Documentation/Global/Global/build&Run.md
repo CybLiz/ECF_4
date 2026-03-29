@@ -29,3 +29,12 @@ docker build -t common-data-service:latest .
 docker build -t payment-service:latest .
 ```
 
+
+## Run
+kubectl port-forward -n ecommerce-project deployment/client-deployment 8080:80
+or
+kubectl port-forward -n ecommerce-project svc/client-service 8080:80    
+...
+http://localhost:8080
+
+
